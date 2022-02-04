@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple SignalR Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div>
+        <div class="center-body">
+            <input type="text" placeholder="Enter url for connection" value="http://localhost:5280/gamehub" id="ConnectionUrl"/>
+            <button onclick="ConnectApp()" id="ConnectButton">Connect</button> 
+        </div>
+        <span class="center-body" id="ErrorMsg"></span>
+        
+        <br>
+        <p class="info center-body" id="userJoined">
+            
+        </p>
+
+        <p class="center-body mt-top">
+            The System 💻 has generated a number. <br>
+            Guess the number - it's between 1 and 10
+        </p>
+
+        <p class="center-body mt-top">
+            🧧   As this is a connected sport  , you would be notified as more people connect. <br> <br>
+            When a correct guess is made 🏅 , a new number is generated
+        </p>
+
+        <div class="center-body mt-top">
+            <input type="text" placeholder="Enter your guess" id="userGuess"/>
+            <button onclick="SubmitAnswer()" id="submitAnswer">Submit</button> 
+        </div>
+        <span class="center-body" id="ErrorMsgResult"></span>
+
+        <p class="center-body info" id="resultMsg">
+             
+        </p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/microsoft-signalr/3.1.7/signalr.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

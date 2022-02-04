@@ -1,0 +1,43 @@
+*, input, button{
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    margin-top: 5%;
+}
+
+.center-body{
+    display: flex;
+    place-content: center center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+button{
+    font-size: 1rem;
+    background-color: blue;
+    opacity: 0.8;
+    padding: 7px 20px;
+    color: white;
+    border: none;
+}
+
+input{
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 0px;
+    border: 1px solid black;
+    font-size: 1rem;
+}
+
+span{
+    display: block;
+    font-size: 0.8rem;
+}
+
+.info{
+    color: red;
+}
+
+.mt-top{
+    margin-top: 50px;
+}
